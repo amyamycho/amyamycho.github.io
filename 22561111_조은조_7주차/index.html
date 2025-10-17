@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busan Rock Festival</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+    
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 60px;
+            z-index: 100;
+        }
+    
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: red;
+        }
+    
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+    
+        nav a:hover {
+            color: #ff2b2b;
+        }
+    
+        .main-visual {
+            width: 100%;
+            height: 100vh;
+            background-image: url('mainvisual.jpg'); 
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .notice {
+    background-color: #b87363; /* 따뜻한 브라운 톤 배경 */
+    padding: 140px 0 100px;
+    text-align: center;
+}
+
+.notice h2 {
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 60px;
+}
+
+.notice-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 40px;
+    border-radius: 10px;
+    gap: 40px;
+}
+
+.notice-item img {
+    width: 250px;
+    border-radius: 8px;
+}
+
+.notice-text {
+    text-align: left;
+    color: #fff;
+}
+
+.notice-text .date {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 8px;
+}
+
+.notice-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.readmore {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.readmore:hover {
+    color: #ff2b2b;
+}
+        </style>
+</head>
+
+<body>
+<header>
+    <div class="logo">Busan Rock Festival</div>
+    <nav>
+        <ul>
+            <li><a href="#">LINE-UP</a></li>
+            <li><a href="#">TIMETABLE</a></li>
+            <li><a href="#">INFORMATION</a></li>
+            <li><a href="#">CAMPING</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="main-visual">
+</section>
+
+<section class="notice">
+    <h2>NOTICE</h2>
+
+    <div class="notice-item">
+        <img src="poster.jpg" alt="분실물 안내">
+        <div class="notice-text">
+            <p class="date">2025년 10월 02일</p>
+            <h3>분실물 안내</h3>
+            <a href="#" class="readmore">Read More →</a>
+        </div>
+    </div>
+
+    <div class="notice-item">
+        <img src="poster.jpg" alt="루키즈 온 더 부락">
+        <div class="notice-text">
+            <p class="date">2025년 10월 01일</p>
+            <h3>&lt;2025 루키즈 온 더 부락&gt; TOP 3 발표</h3>
+            <a href="#" class="readmore">Read More →</a>
+        </div>
+    </div>
+
+    <div class="notice-item">
+        <img src="poster.jpg" alt="입장절차 안내">
+        <div class="notice-text">
+            <p class="date">2025년 09월 26일</p>
+            <h3>입장절차 안내</h3>
+            <a href="#" class="readmore">Read More →</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
